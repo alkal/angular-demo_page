@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.row+.row{margin-top:20px;}
+.mat-form-field-type-mat-input .mat-input-infix{width:100%!important;}
+.mat-input-element{width:auto!important;}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; margin-right:20px; }
+.cdk-overlay-pane{max-width:none!important;width:90%;margin:0 auto!important;}
+.mat-dialog-title{margin-bottom: 0 !important;}
+.mat-dialog-container{padding:18px 12px !important;}

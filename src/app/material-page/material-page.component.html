@@ -1,0 +1,58 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="jumbotron">
+      <h1><mat-icon class="material-icons md-48">info_outline</mat-icon> Angular Material &amp; Bootstrap</h1>
+      <p>This is a demo template that I created using Angular Material and Bootstrap for educational purposes.</p>
+  </div><!--// end jumbotron -->
+  <div class="row">
+    <div class="col-sm-12">
+        <mat-checkbox
+        #showDetails
+        >Show Details</mat-checkbox>
+        <div *ngIf="showDetails.checked" class="well">Some details...</div>
+    </div><!--// end col-sm-12 -->
+  </div><!--// end row -->
+  <div class="row">
+    <div class="col-sm-12">
+        <mat-radio-group
+        [(ngModel)]="optionSelection">
+        <mat-radio-button value="Option 1">Option 1</mat-radio-button>
+        <mat-radio-button value="Option 2">Option 2</mat-radio-button>
+      </mat-radio-group>
+      <div *ngIf="optionSelection" class="well">Your favorite option is: {{optionSelection}}</div>
+    </div><!--// end col-sm-12 -->
+  </div><!--// end row -->
+  <div class="row">
+    <div class="col-sm-12">
+        <mat-form-field>
+          <mat-select placeholder="Favorite food" [(ngModel)]="foodSelection" (change)="log(foodSelection)">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field> 
+      <div *ngIf="foodSelection" class="well">Your favorite food is: {{foodSelectedName}}</div>
+    </div><!--// end col-sm-12 -->
+  </div><!--// end row -->
+  <div class="row">
+    <div class="col-sm-12">
+      <mat-form-field class="example-full-width">
+            <input 
+              ngModel
+              name="emailAddress"
+              #emailAddress="ngModel"
+              matInput placeholder="Email Address" value="" required>
+            <mat-hint>Give valid email address</mat-hint>
+            <span mat-suffix>@domain.com</span>
+            <mat-error *ngIf="emailAddress.invalid&&emailAddress.errors.required">
+              Email is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+      </div><!--// end col-sm-12 -->
+  </div><!--// end row -->
+  <div class="row">
+      <div class="col-sm-12">
+        <button mat-raised-button color="warn" (click)="openDialog()">Open Modal</button>
+      </div><!--// end col-sm-12 -->
+    </div><!--// end row -->
+</div><!--// end container-fluid -->
