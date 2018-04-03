@@ -13,8 +13,8 @@ The mentioned project was generated with [Angular CLI](https://github.com/angula
 1. Back-end: [Node.js](http://nodejs.org/), [Angular CLI](https://github.com/angular/angular-cli)
 2. Front-end:
     * [Angular](https://angular.io/)
-    * [Angular Material] (https://material.angular.io/)
-    * [Material Icons] (https://material.io/icons/)
+    * [Angular Material](https://material.angular.io/)
+    * [Material Icons](https://material.io/icons/)
     * CSS based on [Twitter's bootstrap](http://getbootstrap.com/)
 
 ## Development server
